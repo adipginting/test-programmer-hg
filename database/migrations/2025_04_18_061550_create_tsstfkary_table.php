@@ -16,9 +16,15 @@ return new class extends Migration
             $table->char('nama', 100);
             $table->string('email', 255);
             $table->char('phone', 14);
-            $table->char('kddvsi', 2);
+            $table->char('kddvsi', 2)->unique();
             $table->date('dob');
             $table->date('regdtm');
+
+            $table->foreign('kddvsi')
+                ->references('kddvsi')
+                ->on('tsstfdvsi')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 
