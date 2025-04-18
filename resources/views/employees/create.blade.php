@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <h1>Create Employee</h1>
+  <h1>Input data baru karyawan</h1>
   <form action="{{ route('employees.store') }}" method="POST">
     @csrf
     <div>
