@@ -27,7 +27,7 @@
       <label for="department">Department:</label>
       <input type="text" id="department" name="department" required>
     </div>
-    <button type="submit">Create Employee</button>
+    <button type="submit">Simpan Karyawan</button>
 
 </body>
 

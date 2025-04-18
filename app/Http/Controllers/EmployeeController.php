@@ -27,11 +27,11 @@ class EmployeeController extends Controller
 
         // Validate and store the employee data
         $validatedData = $request->validate([
-            'kdkary' => 'required|string|max:255',
-            'nama' => 'required|string|max:255',
+            'kdkary' => 'required|string|max:9',
+            'nama' => 'required|string|max:100',
             'email' => 'required|email|max:255',
-            'phone' => 'required|string|max:20',
-            'kddvsi' => 'required|string|max:255',
+            'phone' => 'required|string|max:14',
+            'kddvsi' => 'required|string|max:2',
             'dob' => 'required|date',
             'regdt' => 'required|date',
         ]);
