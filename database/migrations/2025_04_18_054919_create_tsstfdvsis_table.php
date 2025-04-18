@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tsstfdvsi', function (Blueprint $table) {
+        Schema::create('tsstfdvsis', function (Blueprint $table) {
             $table->char('kddvsi', 2)->primary();
             $table->char('nama', 100);
             $table->double('dvsic', 3, 0);
@@ -23,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tsstfdvsi');
+        Schema::dropIfExists('tsstfdvsis');
     }
 };
